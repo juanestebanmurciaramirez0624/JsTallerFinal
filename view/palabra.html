@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palabra ejercicio</title>
+    <link rel="stylesheet" href="../css/NavStyle.css">
+    <link rel="stylesheet" href="../css/formStyle.css">
+    <script src="../js/FuncionPalabra.js" defer></script>
+    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+    <header class="header">
+        <a href="../index.html" class="a name-logo"><img src="../img/JavaScript-logo.png" height="50"><span class="name-logo">Js taller</span></a>
+        <div>
+            <nav>
+                <ul class="ul">
+                    <li class="li"><a href="#" class="a">Ejercicios Js</a>
+                        <ul class="ul-menu">
+                            <li><a href="./palabra.html" class="sub-a">Ejercicio palabra</a></li>
+                            <li><a href="./grados.html" class="sub-a">Ejercicio grados</a></li>
+                            <li><a href="./tipoTriangulo.html" class="sub-a">Tipo Triangulo</a></li>
+                            <li><a href="./instructor.html" class="sub-a">Identificar instructor</a></li>
+                        </ul>
+                    </li>
+                    <li class="li"><a href="./areaPerimetro.html" class="a">Area Perimetro Figura</a>
+                    </li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <div class="container">
+            <div class="container-form">
+            <h1 style="text-align: center;">Ejercicio palabra</h1>
+        <form>
+            <div>
+            <label for="palabra" class="form-label">Ingrese una palabra</label>
+            <input type="text" id="palabra" required step="0.1" class="form-input-one"> 
+        </div>
+        <div>
+            <label for="opcion" class="form-label">Ingrese una opción:</label>
+            <label for="opcion" class="form-label option">1. Longitud de la palabra </label>
+            <label for="opcion" class="form-label option">2. La palabra convertida en mayúsculas </label>
+            <label for="opcion" class="form-label option">3. La palabra convertida en minúsculas</label>
+            <label for="opcion" class="form-label option">4. El primer carácter de la palabra</label>
+            <input type="number" id="opcion" required step="0.1" class="form-input-one"> 
+        </div>
+        <div class="end">
+            <button type="submit" class="form-button" id="enviar">Convertir</button>
+        </div>
+        </form>
+        </div>
+            </div>
+</body>
+</html>

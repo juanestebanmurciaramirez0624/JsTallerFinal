@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificar instructor</title>
+    <link rel="stylesheet" href="../css/NavStyle.css">
+    <link rel="stylesheet" href="../css/formStyle.css">
+    <script src="../js/FuncionInstructor.js" defer></script>
+</head>
+<body class="body">
+    <header class="header">
+        <a href="../index.html" class="a name-logo"><img src="../img/JavaScript-logo.png" height="50"><span class="name-logo">Js taller</span></a>
+        <div>
+            <nav>
+                <ul class="ul">
+                    <li class="li"><a href="#" class="a">Ejercicios Js</a>
+                        <ul class="ul-menu">
+                            <li><a href="./palabra.html" class="sub-a">Ejercicio palabra</a></li>
+                            <li><a href="./grados.html" class="sub-a">Ejercicio grados</a></li>
+                            <li><a href="./tipoTriangulo.html" class="sub-a">Tipo Triangulo</a></li>
+                            <li><a href="./instructor.html" class="sub-a">Identificar instructor</a></li>
+                        </ul>
+                    </li>
+                    <li class="li"><a href="./areaPerimetro.html" class="a">Area Perimetro Figura</a>
+                    </li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+    <div class="container-form">
+    <h1 style="text-align: center;">Identificar instructor</h1>
+<form>
+    <div>
+        <label for="nameinstructor" class="form-label">Nombre instructor</label>
+        <select id="nameinstructor" class="form-input">
+            <option value="Yaneth">Yaneth</option>
+            <option value="Manuel">Manuel</option>
+            <option value="Erick">Erick</option>
+            <option value="Paula">Paula</option>
+            <option value="Narly">Narly</option>
+            <option value="Cristian">Cristian</option>
+            <option value="Julian">Julian</option>
+            <option value="Andrea">Andrea</option>
+        </select>
+</div>
+<div>
+    <label for="lastnameinstructor" class="form-label">Apellido instructor</label>
+    <select id="lastnameinstructor" class="form-input">
+        <option value="Castillo">Castillo</option>
+        <option value="Garavito">Garavito</option>
+        <option value="Granados">Granados</option>
+        <option value="Romero">Romero</option>
+        <option value="Sanchez">Sanchez</option>
+        <option value="Buitrago">Buitrago</option>
+        <option value="Aranguren">Aranguren</option>
+        <option value="Ramos">Ramos</option>
+    </select>
+</div>
+<div>
+    <label for="materia" class="form-label">Materia que dicta</label>
+    <select id="materia" class="form-input">
+        <option value="Proteccion">Protección Ambiental y SST</option>
+        <option value="Python">Python Básico</option>
+        <option value="java">Lenguaje Avanzado en java</option>
+        <option value="Emprendimiento">Emprendimiento</option>
+        <option value="SQL">Consulta y SQL Extendido Relacionales y No Relacionales</option>
+        <option value="Proyecto">Realización y Estimación Propuesta Técnica-Diseño Proyecto</option>
+        <option value="js">Fundamentos de JavaScript Moderno</option>
+        <option value="Investigacion">Investigación</option>
+        <option value="Comunicacion">Comunicación</option>
+    </select>
+</div>
+<div class="end">
+    <button type="submit" class="form-button" id="enviar">Comprobar</button>
+</div>
+</form>
+</div>
+    </div>
+</body>
+</html>

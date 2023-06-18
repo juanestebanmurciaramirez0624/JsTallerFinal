@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio js</title>
+    <link rel="stylesheet" href="css/NavStyle.css">
+    <link rel="stylesheet" href="css/formStyle.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/modalStyle.css">
+</head>
+<body class="body">
+    <header class="header">
+        <a href="./index.html" class="a name-logo"><img src="./img/JavaScript-logo.png" height="50"><span class="name-logo">Js taller</span></a>
+        <div>
+            <nav>
+                <ul class="ul">
+                    <li class="li"><a href="#" class="a">Ejercicios Js</a>
+                        <ul class="ul-menu">
+                            <li><a href="./view/palabra.html" class="sub-a">Ejercicio palabra</a></li>
+                            <li><a href="./view/grados.html" class="sub-a">Ejercicio grados</a></li>
+                            <li><a href="./view/tipoTriangulo.html" class="sub-a">Tipo Triangulo</a></li>
+                            <li><a href="./view/instructor.html" class="sub-a">Identificar instructor</a></li>
+                        </ul>
+                    </li>
+                        <li class="li"><a href="./view/areaPerimetro.html" class="a">Area Perimetro Figura</a>
+                        </li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container-form">
+        <h1 style="text-align: center;">Registro de usuarios</h1>
+    <form onsubmit="return validarFormulario()">
+        <div>
+            <label for="TypeDocument" class="form-label">Tipo de documento</label>
+            <select id="TypeDocument" class="form-input">
+                <option class="form-option">Tarjeta de identidad</option>
+                <option class="form-option">Cedula ciudadania</option>
+                <option class="form-option">Cedula extranjeria</option>
+            </select>
+            <div>
+                <label for="numberDoc" class="form-label">Numero de documento</label>
+                <input type="text" class="form-input-one" id="numberDoc" placeholder="Numero de documento" >
+            </div>
+            <div>
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-input-one" id="name" placeholder="Nombres" >
+            </div>
+            <div>
+                <label for="lastname" class="form-label">Apellido</label>
+                <input type="text" class="form-input-one" id="lastname" placeholder="Apellidos" >
+            </div>
+            <div>
+                <label for="date" class="form-label">Fecha de nacimiento</label>
+                <input type="date" class="form-input-one" id="date" placeholder="Fecha de nacimiento" >
+            </div>
+            <div>
+                <label for="email" class="form-label">Correo</label>
+                <input type="text" class="form-input-one" id="email" placeholder="Corrreo electronico" >
+            </div>
+            <div>
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-input-one" id="password" placeholder="Contraseña" >
+            </div>
+            <div>
+                <label for="conPassword" class="form-label">Confirmar contraseña</label>
+                <input type="password" class="form-input-one" id="conPassword" placeholder="Confirmar contraseña" >
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox" class="checkbox"> Aceptar términos de uso
+                <a type="button" id="OpenTerminos" class="form-input-termino" >Ver términos y condiciones</a>
+                <div id="modal-terminos" class="modal-container">
+                    <div class="modal-content">
+                        <h2 style="text-align: center;">Terminos y servicios</h2>
+                        <br>
+                        <p>¡Bienvenido a nuestro sitio web! Antes de utilizar nuestros servicios, te pedimos que leas y aceptes nuestros términos y condiciones. A continuación, se detallan algunos puntos clave:</p>
+                        <br>
+                        <p>1. Responsabilidad: Hacemos todo lo posible para proporcionar información precisa y actualizada. Sin embargo, no nos hacemos responsables de cualquier error u omisión en el contenido del sitio.</p>
+                        <br>
+                        <p>2. Uso adecuado: Al utilizar nuestros servicios, aceptas utilizarlos de manera adecuada y legal. No se permite el uso indebido, la difamación, el acoso o cualquier actividad ilegal.</p>
+                        <br>
+                        <p>3. Privacidad: Respetamos tu privacidad y protegemos tus datos personales de acuerdo con nuestra política de privacidad. No compartiremos tu información con terceros sin tu consentimiento.</p>
+                        <br>
+                        <p>4. Propiedad intelectual: El contenido y los recursos proporcionados en nuestro sitio están protegidos por derechos de autor y otras leyes de propiedad intelectual. No está permitida la reproducción, distribución o uso no autorizado sin nuestra autorización expresa.</p>
+                        <br>
+                        <div class="oder">
+                        <div class="end">
+                            <div id="modal-closeTerminos" class="modal-close">
+                                <button class="form-button">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div> 
+            </div>
+    <div class="end">
+        <button type="submit" class="form-button" id="enviar" >Registrarme</button>
+    </div>
+    </form>
+    </div>
+        </div>
+        <script src="./js/FuncionForm.js"></script>
+        <script src="./js/modal.js"></script>
+    </body>
+</html>
